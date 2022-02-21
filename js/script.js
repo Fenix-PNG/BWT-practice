@@ -1,6 +1,6 @@
 navigator.geolocation.getCurrentPosition (
     function(position){
-    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=309cfbf55c84bcda344c5c45f47dbe0e`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=309cfbf55c84bcda344c5c45f47dbe0e`)
         .then(function (resp) {return resp.json() })
         .then(function (data) {
             console.log(data);
